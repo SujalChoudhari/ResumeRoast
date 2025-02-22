@@ -33,7 +33,7 @@ export default function Home() {
     <main className="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto bg-gray-700 rounded-2xl shadow-2xl overflow-hidden">
-          <div className="bg-gradient-to-r from-purple-800 to-indigo-900 py-6 px-8">
+          <div className=" bg-indigo-950 py-6 px-8">
             <h1 className="text-4xl font-extrabold text-center tracking-tight flex items-center justify-center gap-2">
               Resume Roast
               <Image
@@ -60,7 +60,7 @@ export default function Home() {
               <JobDescription />
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-pink-500 to-red-500 hover:from-red-500 hover:to-pink-500 text-white font-bold py-3 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-indigo-900 text-white font-bold py-3 px-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isLoading}
               >
                 {isLoading ? (
