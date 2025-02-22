@@ -21,6 +21,13 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /pdf\.worker\.(min\.)?js/,
+      use: "file-loader",
+    });
+    return config;
+  },
 }
 
 mergeConfig(nextConfig, userConfig)
